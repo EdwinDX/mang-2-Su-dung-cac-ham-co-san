@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập chuỗi').toString();
+    let upperChar = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+    let lowerChar = 'qwertyuiopasdfghjklzxcvbnm';
+    let arr = [];
+    for (let i=0;i<a.length;i++) {
+        if (upperChar.indexOf(a[i])===-1) {
+            arr.push(a[i].toUpperCase());
+        }
+        else if (lowerChar.indexOf(a[i])===-1) {
+            arr.push(a[i].toLowerCase());
+        }
+        else {
+            arr.push(a[i]);
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
